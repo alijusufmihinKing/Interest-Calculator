@@ -1,0 +1,41 @@
+.currency-input-container {
+    /* Optional: Add some spacing */
+    margin-bottom: 15px;
+}
+
+.input-wrapper {
+    display: flex; /* Aligns the symbol and input field inline */
+    align-items: center; /* Centers items vertically */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px; /* Space for the symbol */
+}
+
+.currency-symbol {
+    margin-right: 5px; /* Space between symbol and number */
+    color: #555;
+}
+
+#currency-field {
+    border: none; /* Remove default input border as the wrapper has one */
+    padding: 10px 0; /* Add padding for better look */
+    flex-grow: 1; /* Allows input to take up remaining space */
+    /* Removes the default up/down arrows in some browsers for number inputs */
+    -moz-appearance: textfield; 
+}
+
+#currency-field::-webkit-inner-spin-button,
+#currency-field::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
